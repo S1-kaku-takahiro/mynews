@@ -24,7 +24,11 @@
                     <div class="form-group row">
                         <label class="col-md-2">性別</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="gender" value="{{ old('gender') }}">
+                            <select class="form-control" name="gender">
+                                <option value="men" select = selected　@if(old('gender')=='men') select = selected  @endif>男性</option>
+                                <option value="woman" @if(old('gender')=='woman') select = selected  @endif>女性</option>
+                            </select>
+                            
                         </div>
                     </div>
                     <div class="form-group row">
