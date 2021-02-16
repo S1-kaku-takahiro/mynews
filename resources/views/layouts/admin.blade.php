@@ -11,7 +11,6 @@
         <title>@yield('title')</title>
 
         <!-- Scripts -->
-         {{-- Laravel標準で用意されているJavascriptを読み込みます --}}
         <script src="{{ secure_asset('js/app.js') }}" defer></script>
 
         <!-- Fonts -->
@@ -24,7 +23,7 @@
     </head>
     <body>
         <div id="app">
-            {{-- ナビゲーションバー --}}
+
             <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
                 <div class="container">
                     <a class="navbar-brand" href="{{ url('/') }}">
@@ -43,10 +42,10 @@
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
                             <!-- Authentication Links -->
-                            {{-- 未ログインならログイン画面へのリンク --}}
+
                             @guest
                                 <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                            {{-- ログイン済ならユーザー名とログアウトボタン --}}
+
                             @else
                                 <li class="nav-item dropdown">
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -71,10 +70,9 @@
                     </div>
                 </div>
             </nav>
-            {{-- ここまでナビゲーションバー --}}
+
 
             <main class="py-4">
-                {{-- コンテンツ --}}
                 @yield('content')
             </main>
         </div>
