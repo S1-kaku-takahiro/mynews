@@ -26,7 +26,7 @@
                         <div class="col-md-10">
                             <select class="form-control" name="gender">
                                 
-                                <option value="men" @endif>男性</option>
+                                <option value="men">男性</option>
                                 <option value="woman" @if(old('gender')=='woman') select = selected  @endif>女性</option>
                             </select>
                             
