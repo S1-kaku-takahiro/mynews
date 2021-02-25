@@ -1,9 +1,9 @@
 @extends('layouts.front')
 
 @section('content')
+<p>カリキュラム「PHP/Laravelコース - Herokuへのデプロイ」の課題1の確認用。</p>
     <div class="container">
         <hr color="#c0c0c0">
-        <p>カリキュラム「PHP/Laravelコース - Herokuへのデプロイ」の課題1の確認用。</p>
         @if (!is_null($headline))
             <div class="row">
                 <div class="headline col-md-10 mx-auto">
